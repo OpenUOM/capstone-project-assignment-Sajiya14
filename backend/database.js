@@ -42,7 +42,7 @@ const readTeacherInfo = async (id) => {
         knex_db
             .raw(sql, [id])
             .then((teacher) => {
-                resolve(teacher);
+                resolve(teachers);
             })
             .catch((error) => {
                 reject(error);
