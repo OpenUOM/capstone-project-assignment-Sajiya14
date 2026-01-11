@@ -17,7 +17,6 @@ function init(db) {
 }
 
 const knex_db = require("./db-config");
-const { status } = require("express/lib/response");
 
 const dbinitialize = async () => {
     testBase.resetDatabase(knex_db);
